@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+
+  font-size: 18px;
+}
+h2 {
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+}
+/* header section */
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0)),
+    url("image/background.jpg") center no-repeat;
+  background-size: cover;
+  padding: 4rem 0 15rem;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 5px black;
+}
+h1 {
+  font-size: 50px;
+}
+.italic {
+  font-style: italic;
+}
+/* main section */
+.main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding: 4rem 0;
+}
+.row {
+  background-color: #ffffff;
+  padding: 1rem;
+  margin: 0 10px;
+  border-radius: 15px;
+  box-shadow: 0 0 7px black;
+}
+.row h3 {
+  color: #6f98ce;
+  text-transform: capitalize;
+  margin: 1rem 0;
+}
+.row p {
+  color: #222;
+}
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+h2 {
+  color: #5a5add;
+  font-size: 30px;
+  margin-top: 5rem;
+  text-shadow: 0px 0px 5px #5a5add;
+}
+@media screen and (max-width: 650px) {
+  .main {
+    flex-direction: column;
+  }
+  .main .row {
+    margin: 2rem 0;
+  }
+}
+/* about me section*/
+.about-me {
+  width: 70%;
+  margin: 4rem auto;
+  display: flex;
+  justify-content: space-around;
+  background-color: #babaee;
+  border-radius: 15px;
+  padding: 1rem 2rem;
+}
+.info h3 {
+  margin: 0 0 1rem;
+  color: #5a5add;
+}
+.info ul {
+  margin-bottom: 1rem;
+}
+.info ul li {
+  font-weight: bold;
+}
+@media screen and (max-width: 650px) {
+  .about-me {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-me img {
+    margin: 1rem auto 2rem;
+  }
+}
+.contact-detail {
+  text-align: center;
+  margin: 3rem 0 2rem;
+}
+footer {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+li a {
+  color: #222;
+  border: 2px solid #222;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 0 0.5rem;
+  transition: 0.5s;
+}
+li a:hover {
+  background-color: #222;
+  color: #fff;
+  transform: rotate(10deg);
+}
